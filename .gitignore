@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyos
+*.pyd
+
+## Secrets
+# Google Cloud Vision credentials (real)
+google-vision-credentials.json
+*credentials.json
+creds64*.txt
+.env
+
+# Allow example file
+!google-vision-credentials-example.json
+
+## Temporary files
+temp/
+*.tmp
+
+/PruebasDocumentos/
+
+creds64.txt
+creds64_clean.txt
+
+entrypoint.sh

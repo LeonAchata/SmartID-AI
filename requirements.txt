@@ -1,0 +1,11 @@
+fastapi==0.118.0
+python-dotenv==1.1.1
+langgraph==0.6.8
+pydantic-settings==2.11.0
+pymupdf==1.26.4
+openai==2.2.0
+opencv-python==4.12.0.88
+pdf2image==1.17.0
+python-multipart==0.0.20
+uvicorn==0.37.0
+google_cloud_vision==3.10.2

@@ -1,0 +1,161 @@
+# Docker ignore: avoid sending secrets into the build context
+# Ignore local credential files and env files
+google-vision-credentials.json
+creds64.txt
+creds64_clean.txt
+creds_raw.txt
+envfile
+.env
+
+# Ignore JSON credential files by pattern but allow example files
+*-credentials.json
+*.json
+!google-vision-credentials-example.json
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Temp
+temp/
+
+# Do not ignore entrypoint or other scripts required for runtime
+!entrypoint.sh
+# ======================================
+# DOCKER IGNORE
+# ======================================
+# Archivos que NO se copian al contenedor Docker
+# Reduce tamaño de imagen y mejora seguridad
+
+# ======================================
+# SECRETS & CONFIG
+# ======================================
+.env
+.env.*
+*.env
+google-vision-credentials.json
+
+# ======================================
+# VERSION CONTROL
+# ======================================
+.git
+.gitignore
+.gitattributes
+
+# ======================================
+# PYTHON
+# ======================================
+# Cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ======================================
+# IDE & EDITORS
+# ======================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ======================================
+# OS FILES
+# ======================================
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+
+# ======================================
+# LOCAL DATA
+# ======================================
+# Archivos temporales de PDFs (mantener carpeta vacía)
+temp/*.pdf
+temp/**/*.pdf
+
+# Directorio de facturas locales
+/PruebasDocumentos/
+
+# Bases de datos locales
+*.db
+*.sqlite
+*.sqlite3
+
+# ======================================
+# DOCUMENTATION & MEDIA
+# ======================================
+Demo.mp4
+*.mp4
+*.avi
+*.mov
+
+# Logs locales
+*.log
+
+# ======================================
+# DOCKER
+# ======================================
+Dockerfile
+.dockerignore
+docker-compose.yml
+docker-compose.*.yml
+
+# ======================================
+# CI/CD
+# ======================================
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# ======================================
+# KEEP THESE (use ! to negate ignore)
+# ======================================
+!temp/.gitkeep
